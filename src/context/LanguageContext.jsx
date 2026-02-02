@@ -70,10 +70,13 @@ export const translations = {
         },
         stats: { exp: "Ani Experiență", people: "Clienți Fericiți", activities: "Activități" },
         services: {
-            title: "Water Sports Lessons",
-            s1_title: "Water Sports Lessons", s1_desc: "Our experienced instructors offer lessons in stand-up paddleboarding (SUP), kitesurfing, and surfing. Whether you're a beginner or an advanced rider, we have the right program for you.",
-            s2_title: "Water Sports Equipment", s2_desc: "Don't have your own equipment? No problem! We offer top-quality stand-up paddleboards, kitesurfing gear, and surfboards to use.",
-            s3_title: "Water Sports Events", s3_desc: "Join us for exciting water sports events, such as SUP races, SUP competitions,testing new water sports equipment and much more. Check our calendar to stay up-to-date with our upcoming events."
+            title: "Ce Oferim",
+            s1_title: "Lecții Sporturi Nautice",
+            s1_desc: "Instructorii noștri cu experiență oferă lecții de stand-up paddleboarding (SUP), kitesurfing și surfing. Fie că ești începător sau avansat, avem programul potrivit pentru tine.",
+            s2_title: "Echipament Sporturi Nautice",
+            s2_desc: "Nu ai propriul echipament? Nici o problemă! Oferim plăci de stand-up paddle, echipament de kitesurfing și plăci de surf de cea mai bună calitate.",
+            s3_title: "Evenimente Sporturi Nautice",
+            s3_desc: "Alătură-te nouă pentru evenimente interesante de sporturi nautice, cum ar fi curse SUP, competiții SUP, testarea noilor echipamente și multe altele. Verifică calendarul nostru pentru a fi la curent cu evenimentele viitoare."
         },
         about: {
             title: "Cine Suntem",
