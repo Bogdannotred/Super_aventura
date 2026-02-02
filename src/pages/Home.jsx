@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { ServicesSection } from '../components/ServicesSection';
+import { TiltCard } from '../components/TiltCard';
 
 export default function Home() {
     const { t } = useLanguage();
