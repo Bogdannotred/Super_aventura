@@ -55,6 +55,29 @@ export default function Home() {
             {/* Services */}
             <ServicesSection className="mb-20" />
 
+            {/* Kids Section */}
+            <section className="py-16 container mx-auto px-6 mb-20 bg-brand-light/20 rounded-3xl">
+                <div className="flex flex-col lg:flex-row items-center gap-12">
+                    <div className="w-full lg:w-1/2 space-y-6">
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900">{t.kids?.title}</h2>
+                        <p className="text-xl text-slate-700 leading-relaxed">{t.kids?.desc}</p>
+                        <div className="flex gap-4">
+                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">👶 Safe</span>
+                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">🌊 Fun</span>
+                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">🏄‍♂️ Learn</span>
+                        </div>
+                    </div>
+                    <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                        <motion.div whileHover={{ scale: 1.05 }} className="rounded-2xl overflow-hidden shadow-lg h-64">
+                            <img src="/poze/copii.png" alt="Kids Fun" className="w-full h-full object-cover" />
+                        </motion.div>
+                        <motion.div whileHover={{ scale: 1.05 }} className="rounded-2xl overflow-hidden shadow-lg h-64 mt-8">
+                            <img src="/poze/copiiv2.png" alt="Kids Splash" className="w-full h-full object-cover" />
+                        </motion.div>
+                    </div>
+                </div>
+            </section>
+
             {/* Stats */}
             <div className="relative z-10 -mt-10 mb-20 container mx-auto px-6">
                 <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 text-slate-800">

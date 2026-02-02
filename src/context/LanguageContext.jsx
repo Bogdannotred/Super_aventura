@@ -59,6 +59,10 @@ export const translations = {
             phone: "Phone",
             whatsapp: "Chat on WhatsApp"
         },
+        kids: {
+            title: "Fun for Kids",
+            desc: "Ideal for children! Safe splashing and water fun are guaranteed. Our instructors ensure a safe and enjoyable environment for the little ones."
+        },
         footer: { contact: "Contact Us", rights: "All rights reserved." }
     },
     ro: {
@@ -112,6 +116,10 @@ export const translations = {
             send: "Trimite Mesaj",
             phone: "Telefon",
             whatsapp: "Scrie-ne pe WhatsApp"
+        },
+        kids: {
+            title: "Distracție pentru Copii",
+            desc: "Ideal și pentru copii! Bălăceală, distracție și siguranță garantată. Instructorii noștri asigură un mediu sigur și plăcut pentru cei mici."
         },
         footer: { contact: "Contactează-ne", rights: "Toate drepturile rezervate." }
     }
