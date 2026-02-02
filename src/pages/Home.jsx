@@ -57,26 +57,33 @@ export default function Home() {
             <ServicesSection className="mb-20" />
 
             {/* Kids Section */}
-            <section className="py-16 container mx-auto px-6 mb-20 bg-brand-light/20 rounded-3xl">
-                <div className="flex flex-col lg:flex-row items-center gap-12">
-                    <div className="w-full lg:w-1/2 space-y-6">
-                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900">{t.kids?.title}</h2>
-                        <p className="text-xl text-slate-700 leading-relaxed">{t.kids?.desc}</p>
-                        <div className="flex gap-4">
-                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">👶 Safe</span>
-                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">🌊 Fun</span>
-                            <span className="px-4 py-2 bg-white rounded-full text-brand-dark font-bold shadow-sm">🏄‍♂️ Learn</span>
+            {/* Kids Section */}
+            <section className="py-20 container mx-auto px-6 mb-20">
+                <TiltCard className="w-full">
+                    <div className="bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 md:p-12 shadow-2xl border border-blue-100 relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl group-hover:bg-blue-400/20 transition-colors duration-700" />
+
+                        <div className="flex flex-col lg:flex-row items-center gap-12 relative z-10">
+                            <div className="w-full lg:w-1/2 space-y-6">
+                                <h2 className="text-3xl md:text-5xl font-bold text-blue-900 group-hover:text-blue-600 transition-colors">{t.kids?.title}</h2>
+                                <p className="text-xl text-slate-600 leading-relaxed font-medium">{t.kids?.desc}</p>
+                                <div className="flex gap-4 pt-4">
+                                    <span className="px-5 py-2.5 bg-white rounded-xl text-blue-900 font-bold shadow-md border border-blue-50 transform group-hover:scale-105 transition-transform">👶 Safe</span>
+                                    <span className="px-5 py-2.5 bg-white rounded-xl text-blue-900 font-bold shadow-md border border-blue-50 transform group-hover:scale-105 transition-transform delay-75">🌊 Fun</span>
+                                    <span className="px-5 py-2.5 bg-white rounded-xl text-blue-900 font-bold shadow-md border border-blue-50 transform group-hover:scale-105 transition-transform delay-150">🏄‍♂️ Learn</span>
+                                </div>
+                            </div>
+                            <div className="w-full lg:w-1/2 grid grid-cols-2 gap-6">
+                                <motion.div whileHover={{ scale: 1.05, rotate: -2 }} className="rounded-2xl overflow-hidden shadow-lg h-64 border-4 border-white transform rotate-2 transition-all duration-500">
+                                    <img src="/poze/copii.png" alt="Kids Fun" className="w-full h-full object-cover" />
+                                </motion.div>
+                                <motion.div whileHover={{ scale: 1.05, rotate: 2 }} className="rounded-2xl overflow-hidden shadow-lg h-64 mt-8 border-4 border-white transform -rotate-2 transition-all duration-500">
+                                    <img src="/poze/copiiv2.png" alt="Kids Splash" className="w-full h-full object-cover" />
+                                </motion.div>
+                            </div>
                         </div>
                     </div>
-                    <div className="w-full lg:w-1/2 grid grid-cols-2 gap-4">
-                        <motion.div whileHover={{ scale: 1.05 }} className="rounded-2xl overflow-hidden shadow-lg h-64">
-                            <img src="/poze/copii.png" alt="Kids Fun" className="w-full h-full object-cover" />
-                        </motion.div>
-                        <motion.div whileHover={{ scale: 1.05 }} className="rounded-2xl overflow-hidden shadow-lg h-64 mt-8">
-                            <img src="/poze/copiiv2.png" alt="Kids Splash" className="w-full h-full object-cover" />
-                        </motion.div>
-                    </div>
-                </div>
+                </TiltCard>
             </section>
 
             {/* Stats */}
