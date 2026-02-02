@@ -26,7 +26,7 @@ export default function About() {
                         <FadeIn>
                             <div className="relative rounded-3xl overflow-hidden shadow-2xl group">
                                 <div className="absolute inset-0 bg-brand-dark/10 group-hover:bg-transparent transition-colors duration-500 pointer-events-none" />
-                                <img src="/poze/about.png" onError={(e) => e.target.style.backgroundColor = '#cbd5e1'} alt="About Us" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                <img src="/poze/Cine_sunte_noi.jpg" onError={(e) => e.target.style.backgroundColor = '#cbd5e1'} alt="About Us" className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" />
                             </div>
                         </FadeIn>
                     </div>

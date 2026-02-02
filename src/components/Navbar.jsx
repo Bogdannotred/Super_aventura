@@ -55,13 +55,13 @@ export function Navbar() {
                         onClick={toggleLang}
                         className="px-4 py-2 rounded-full border-2 border-slate-200 text-slate-500 hover:border-brand-DEFAULT hover:text-brand-DEFAULT transition-all text-xs font-bold uppercase tracking-widest"
                     >
-                        {lang}
+                        {lang === 'ro' ? 'en' : 'ro'}
                     </button>
                 </div>
 
                 {/* Mobile Toggle */}
                 <div className="md:hidden flex items-center space-x-4">
-                    <button onClick={toggleLang} className="px-3 py-1 rounded-full border border-brand-DEFAULT text-brand-DEFAULT text-xs font-bold">{lang.toUpperCase()}</button>
+                    <button onClick={toggleLang} className="px-3 py-1 rounded-full border border-brand-DEFAULT text-brand-DEFAULT text-xs font-bold">{lang === 'ro' ? 'EN' : 'RO'}</button>
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-slate-700 p-2 bg-white rounded-full shadow-sm active:scale-95 transition-transform">
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
