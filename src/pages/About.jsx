@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const FadeIn = ({ children, delay = 0 }) => (
@@ -59,9 +60,9 @@ export default function About() {
                             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-bold tracking-wide w-fit mb-4 uppercase">{t.volunteer?.subtitle}</span>
                             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">{t.volunteer?.title}</h2>
                             <p className="text-lg text-slate-600 leading-relaxed mb-8">{t.volunteer?.desc}</p>
-                            <button className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold transition-all shadow-lg hover:shadow-emerald-600/30 w-fit">
+                            <Link to="/contact" className="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold transition-all shadow-lg hover:shadow-emerald-600/30 w-fit">
                                 {t.volunteer?.cta}
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
